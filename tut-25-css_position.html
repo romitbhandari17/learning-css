@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width:200px;
+            height:200px;
+            margin:4px;
+            display: inline-block;
+        }
+        .container{
+            background-color: beige;
+            border:2px solid black;
+            height: 3444px;
+        }
+
+        #box3{
+            /*position:relative; /* moves left right top bottom relative to its original position */
+            /*position:absolute; /* moves left right top bottom relative to its parent */
+            /* top:30px;
+            left:40px */
+
+            /*position: fixed; /* positions the element relative to browser window */
+            /* right: 10px;
+            bottom: 5px; */
+
+            position: sticky;
+            top : 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and Styling Links with Buttons</title>
+    <style>
+
+        .container{
+            padding: 34px;
+            margin:34px auto;
+            width: 666px;
+            border: 2px solid red;
+            background-color: beige;
+            overflow-wrap: break-word;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        a:hover{
+            background-color: burlywood;
+            color:blueviolet;
+        }
+
+        a:visited{
+            background-color:yellow;
+        }
+
+        a:active{
+            background-color: green;
+        }
+
+        .btn{
+            background-color: white;
+            color: gold;
+            font-size: 14px;
+            border-radius: 4px;
+            padding: 3px;
+            border:none;
+        }
+
+        .btn:hover{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>This is my heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, possimus temporibus, repellendus illo minima esse enim ab deserunt ipsa odit animi vel ad atque recusandae neque. Mollitia rerum odio dolore eius saepe nesciunt libero.
+        </p>
+        <a href="https://facebook.com" target="_blank" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>
