@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+</head>
+<style>
+    body{
+        padding:0px;
+        margin: 0px;
+        background-color: black;
+        color:white;
+    }
+    header::before{
+        background: url('img/bg-before-after-tut.jpg');
+        height: 100%;
+        width: 100%;
+        position:absolute;
+        content: "";
+        z-index: -1;
+        top:0;
+        left:0;
+        opacity: 0.4;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    section.secton1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid tomato; */
+        justify-content: center;
+        margin: 3px 25px;
+        height: 300px;
+    }
+
+    .navigate{
+        display: flex;
+    }
+
+    li{
+        list-style: none;
+        padding: 30px 32px;
+    }
+
+    /* section.secton1::before{
+        content: 'this is before content'
+    } */
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigate">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="secton1">
+        <h3>Welcome to Coding World!!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illum expedita voluptates, animi aut ducimus odio minima quasi quo dolore, numquam maxime. Voluptatibus fugit architecto veniam quae alias placeat nulla quasi necessitatibus asperiores at?</p>
+    </section>
+</body>
+</html>
