@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font sizes</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            height: 100vh; /* sets height 100% of view port */
+            width: 50vw; /* sets width 50% of view port */
+            font-size: 5px;
+            border: 1px solid black;
+        }
+        #first {
+            font-size: 3em; /* sets font 3 times of parent */
+            padding: 3em; /* sets padding 3 times of font-size */
+        }
+
+        #second {
+            font-size: 3rem; /* sets font 3 times of html tag font-size */
+            padding: 3rem;; /* sets padding 3 times of html tag font-size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

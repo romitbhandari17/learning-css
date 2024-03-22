@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+<style>
+    /* All p inside div */
+    /* div p{
+        background-color: beige;
+    } */
+
+    /* p directly inside div */
+    div > p{
+        background-color: aqua;
+    }
+
+    /* Applied to all p right next to (sibling) div */
+    /* div + p{
+        background-color: tomato;
+    } */
+</style>
+<body>
+    <div class="container">
+        <div>inside div</div>
+        <h2>this is h2</h2>
+        <p>this is first paragraph.</p>
+        <ul>
+            <li class="item"><p>This is inner most para</p></li>
+        </ul>
+    </div>
+    <p>This is outer paragraph.</p>
+</body>
+</html>
