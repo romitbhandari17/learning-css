@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card{
+        /* border: 2px solid tomato; */
+        background-color: beige;
+        padding: 23px 30px;
+        margin: 24px 12px;
+        box-shadow: 8px 10px green;
+        box-shadow: -8px -10px green;
+        box-shadow: 8px 10px 12px 15px green; /* x offset, y offset, blur radius, spread radius */
+        box-shadow: inset 8px 10px 12px 15px green; /* pushes the shadow inwards */
+        box-shadow: 8px 10px green, 12px 15px tomato; /* multiple box shadows */
+    }
+
+    .card h2{
+
+        text-shadow: 4px 5px 12px goldenrod; /* x offset, y offset, blur radius */
+        text-shadow: -4px -5px 12px goldenrod;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h2>Card1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus accusantium quos animi quasi, alias officia deleniti hic nobis, illo amet incidunt officiis neque labore unde deserunt omnis id eaque iusto blanditiis nisi aut qui!
+        </p>
+        </div><div class="card" id="card2"><h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus accusantium quos animi quasi, alias officia deleniti hic nobis, illo amet incidunt officiis neque labore unde deserunt omnis id eaque iusto blanditiis nisi aut qui!
+            </p>
+        </div><div class="card" id="card3"><h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus accusantium quos animi quasi, alias officia deleniti hic nobis, illo amet incidunt officiis neque labore unde deserunt omnis id eaque iusto blanditiis nisi aut qui!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

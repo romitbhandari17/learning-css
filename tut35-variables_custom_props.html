@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Custom Properties</title>
+</head>
+<style>
+    
+    /* for global var declaration */
+    :root{
+        --primary-color: brown; /* global var */
+        --maxw: 500px;
+    }
+
+    .box{
+        --box-color : green; /* local var */
+        background-color: beige;
+        border:2px solid red;
+        width: 200px;
+        height: 200px;
+        box-shadow: 4px 6px var(--box-color);
+        margin: 6px 8px;
+        color: var(--box-color) ;
+        text-shadow: 3px 4px var(--primary-color);
+    }
+
+    .container {
+        display: flex;
+        background-color: var(--primary-color);
+        align-items: center;
+        justify-content: center; /* center horizontally as displayis flew row */
+        max-width: var(--maxw);
+        margin:auto;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+    </div>
+</body>
+</html>

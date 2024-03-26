@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container{
+        background-color: beige;
+        display: inline-block;
+    }
+
+    .box{
+        height: 250px;
+        width:250px;
+        background-color: tomato;
+        position: relative;                              
+        animation-name: romit2;
+        animation-duration: 4s;
+        animation-delay : 2s; /* delay to start the animation */
+        animation-iteration-count: 1;
+
+        /*animation-fill-mode: forwards; /* the animation ending on to width/ending point */
+        /*animation-fill-mode: alternate; /* the animation ending on starting point */
+        /*animation-timing-function: ease-in; /* slow at start and fast in end */
+        /*animation-timing-function: ease-out; /* fast at start and slow in end */
+        /*animation-timing-function: ease-in-out; /* slow at start, fast in middle and slow in end */
+
+        /* Animation Shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay 
+        animation-iteration-count animation-fill-mode  */
+        animation: romit1 4s ease-in 2s 1 alternate;
+    }
+
+    @keyframes romit2 {
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        50%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+    }
+
+    @keyframes romit1{
+        from{
+            width: 200px;
+        }
+
+        to{
+            width: 1200px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">This is Box1</div>
+    </div>
+</body>
+</html>
